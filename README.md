@@ -1,6 +1,6 @@
 # Crypto Exchange Pro
 
-![Project Screenshot](./screenshot.png) <!-- Replace with your actual screenshot file -->
+![Project Screenshot](https://github.com/mihirprabhath/CoinFlex_App/blob/9a7a92dd5a836a2143cc00443c50cd6d0c2b250f/Capture.JPG) <!-- Replace with your actual screenshot file -->
 
 A modern cryptocurrency and fiat currency converter with real-time market data. Built with React, Axios, and the CoinGecko API.
 
