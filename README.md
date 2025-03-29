@@ -25,4 +25,13 @@ A modern cryptocurrency and fiat currency converter with real-time market data. 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/crypto-exchange-pro.git
+   git clone https://github.com/mihirprabhath/CoinFlex_App.git
+Project Structure
+```bash
+   /src
+├── components
+│   └── MainPage.js       # Main application component
+├── App.js                # Root component
+├── index.js              # Entry point
+/server
+├── server.js             # Backend server
