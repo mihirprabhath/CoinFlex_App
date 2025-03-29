@@ -2,7 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 
+import path from "path";
+
 const app = express();
+
+const __dirname = path.resolve();
 
 // Middleware
 app.use(cors());
@@ -142,6 +146,15 @@ async function convertWithCrypto(sourceCurrency, targetCurrency, amount) {
   return (targetRate / sourceRate) * amount;
 }
 
+if (process.env.NODE_ENV === "production") {
+  // Serve static files from the React app
+  app.use(express.static(path.join(__dirname, "../client/build")));
+
+  // The "catchall" handler: for any request that doesn't match one above, send back index.html.
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  });
+}
 // Start server
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
