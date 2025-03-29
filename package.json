@@ -1,0 +1,21 @@
+{
+  "name": "coinflex_app",
+  "version": "1.0.0",
+  "description": "![Project Screenshot](./screenshot.png) <!-- Replace with your actual screenshot file -->",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "npm run start --prefix server"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihirprabhath/CoinFlex_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihirprabhath/CoinFlex_App/issues"
+  },
+  "homepage": "https://github.com/mihirprabhath/CoinFlex_App#readme"
+}
