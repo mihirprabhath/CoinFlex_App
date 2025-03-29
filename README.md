@@ -26,7 +26,7 @@ A modern cryptocurrency and fiat currency converter with real-time market data. 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mihirprabhath/CoinFlex_App.git
-Project Structure
+## Project Structure
 ```bash
    /src
 ├── components
